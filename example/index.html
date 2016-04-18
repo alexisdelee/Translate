@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Plugin translate</title>
+	</head>
+	<body>
+		<span class="data-translate">Hello // Bonjour // Buenos Dias</span>
+
+		<script type="text/javascript" src="translate.js"></script>
+		<script type="text/javascript">
+			translate.config({
+				selector: 'data-translate',
+				separator: ' // ',
+				langages: ['en', 'fr', 'es'],
+				langage: 'es'
+			});
+		</script>
+	</body>
+</html>
